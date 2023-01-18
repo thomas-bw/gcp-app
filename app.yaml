@@ -1,7 +1,8 @@
 runtime: php
 env: flex
 
-runtime_config: document_root: public
+runtime_config:
+document_root: public
 
 # Ensure we skip ".env", which is only for local development
 skip_files:
@@ -22,5 +23,6 @@ env_variables:
   APP_ENV: production
   APP_KEY: base64:72Z8G5kXUg15VG0XWSrT2hATm+CIfJI8kGa6TLm9BXo=
   APP_NAME: "GCP App - CODE"
+  APP_PORT: 80
 
   LOG_LEVEL: debug
