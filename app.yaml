@@ -1,4 +1,4 @@
-runtime: php
+runtime: php81
 env: flex
 
 runtime_config:
@@ -7,6 +7,8 @@ runtime_config:
 # Ensure we skip ".env", which is only for local development
 skip_files:
   - .env
+
+
 
 automatic_scaling:
   min_num_instances: 1
